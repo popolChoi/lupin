@@ -1,0 +1,18 @@
+json_server 실행(npm run json_server)
+
+
+//create-react-app에서 env/환경변수 사용하기
+https://safe.menlosecurity.com/https://flamingotiger.github.io/frontend/react/create-react-app-environment/
+npm install dotenv --save
+
+
+//CORS 와 Proxy 우회
+https://snupi.tistory.com/210
+
+
+//package
+//"proxy": "http://fx.kebhana.com",
+"homepage": 깃주소
+
+//npm run deploy
+package.json > "scripts": { "deploy": "gh-pages -d build" }
