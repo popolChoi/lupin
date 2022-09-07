@@ -7,7 +7,8 @@ export default function JsonServerTest(){
 	const [count2, setCount2] = useState({});
 
 	useEffect(() => {
-		axios.get(`https://quotation-api-cdn.dunamu.com/v1/forex/recent?codes=FRX.KRWUSD`)
+	
+		axios.get(`/site/program/financial/exchangeJSON?authkey=A8Vnsrd49EgGAzVTkrQZkgBHjfwRyNMT&searchdate=20180102&data=AP01`)
 			.then(response => {
 				setCount(response.data);
 			})

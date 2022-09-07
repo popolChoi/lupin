@@ -11,8 +11,17 @@ https://snupi.tistory.com/210
 
 
 //package
-//"proxy": "http://fx.kebhana.com",
+//"proxy": "https://www.koreaexim.go.kr",
 "homepage": 깃주소
 
 //npm run deploy
 package.json > "scripts": { "deploy": "gh-pages -d build" }
+
+
+
+카카오지도, 부동산 
+환율, 
+//A8Vnsrd49EgGAzVTkrQZkgBHjfwRyNMT
+
+//프론트 프록시 서버
+//https://xiubindev.tistory.com/115
