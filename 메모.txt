@@ -6,22 +6,32 @@ https://safe.menlosecurity.com/https://flamingotiger.github.io/frontend/react/cr
 npm install dotenv --save
 
 
-//CORS 와 Proxy 우회
-https://snupi.tistory.com/210
 
 
-//package
-//"proxy": "https://www.koreaexim.go.kr",
-"homepage": 깃주소
 
 //npm run deploy
 package.json > "scripts": { "deploy": "gh-pages -d build" }
+"homepage": 깃주소
 
 
 
 카카오지도, 부동산 
+
 환율, 
 //A8Vnsrd49EgGAzVTkrQZkgBHjfwRyNMT
 
+publishConfig git 연결
+
+ui페키지: https://mui.com/
+
+----------------------------------------------
+proxy
+
+//package
+//"proxy": "https://www.koreaexim.go.kr",
+
 //프론트 프록시 서버
 //https://xiubindev.tistory.com/115
+
+//CORS 와 Proxy 우회
+https://snupi.tistory.com/210

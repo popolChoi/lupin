@@ -2,8 +2,11 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://www.koreaexim.go.kr",
   "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/material": "^5.10.4",
+    "@mui/styled-engine-sc": "^5.10.3",
     "axios": "^0.27.2",
     "dotenv": "^16.0.2",
     "eslint": "^8.23.0",
@@ -21,6 +24,7 @@
     "react-router-redux": "^4.0.8",
     "react-scripts": "5.0.1",
     "sass": "^1.54.8",
+    "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

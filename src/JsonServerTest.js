@@ -12,7 +12,7 @@ export default function JsonServerTest(){
 			.then(response => {
 				setCount(response.data);
 			})
-		axios.get(`${process.env.REACT_APP_JSON_SERVER}/react-starter/items`)
+		axios.get(`/api2/react-starter/items`)
 			.then(response => {
 				setCount2(response.data);
 			})
