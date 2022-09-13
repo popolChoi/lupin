@@ -1,0 +1,5 @@
+{
+    "/react-starter/items": "/items",
+    "/react-starter/items/:itemNo": "/items/:itemNo"
+}
+  
