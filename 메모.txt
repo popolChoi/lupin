@@ -10,8 +10,11 @@ npm install dotenv --save
 
 
 //npm run deploy
-package.json > "scripts": { "deploy": "gh-pages -d build" }
-"homepage": 깃주소
+package.json > "scripts": {     
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build" 
+    }
+"homepage": "http://popolChoi.github.io/[name]"
 
 
 
