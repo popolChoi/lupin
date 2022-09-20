@@ -1,26 +1,28 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { counter } from "./reducers/counter";
+import { TEST } from 'stores/actions';
 
 function Counter(){
-	// dispatch를 사용하기 위한 준비
 	const dispatch = useDispatch();
+	const { test } = useSelector(state => state.counter);
+	
+	const onClick = () => {
+		dispatch({
+			type: TEST,
+			test: test + 1
+		});
+	};
 
-	// store에 접근하여 state 가져오기
-	const { count } = useSelector(state => state.counter);
-
-	const increse = () => {
-		console.log(count);
-		dispatch(counter({
-			type: "COUNT/INCRESE",
-			count: count + 1
-		}));
+	const onClick2 = () => {
+		dispatch({
+			type: TEST,
+			test: test -1
+		});
 	};
 	
 	return (
 		<React.Fragment>
-			<div>{count}<button onClick={() => increse()}>증가</button></div>
-
+			<div>{test}<button onClick={() => onClick()}>+</button>  <button onClick={() => onClick2()}>-</button></div>
 		</React.Fragment>
 		
 	);
