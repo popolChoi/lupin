@@ -1,0 +1,7 @@
+{
+    "/json-server/": "/",
+    "/json-server/exchange-rate": "/exchange-rate",
+    "/json-server/exchange-rate?searchdate=:id": "/exchange-rate/:id"
+  
+}
+  

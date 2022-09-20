@@ -28,7 +28,7 @@ publishConfig git 연결
 ui페키지: https://mui.com/
 
 //구글스프레드시트 db 로 활용?
-https://velog.io/@junsugi/Google-Sheet-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0-feat.-Google-API
+jeonjucutie@gmail.com
 
 ----------------------------------------------
 proxy

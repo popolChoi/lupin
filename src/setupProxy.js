@@ -9,8 +9,8 @@ module.exports = function(app){
 	);
 
 	app.use(
-		createProxyMiddleware('/api', {
-			target: 'http://localhost:3010/',
+		createProxyMiddleware('/api2', {
+			target: 'https://www.koreaexim.go.kr',
 			changeOrigin: true
 		})
 	);

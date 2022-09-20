@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, {useState, useEffect } from 'react';
 import axios from 'axios';
+import jsonServer from './json-server/db.json';
 
 export default function JsonServerTest(){
 	const [count, setCount] = useState({});
@@ -12,14 +13,21 @@ export default function JsonServerTest(){
 			.then(response => {
 				setCount(response.data);
 			})
-		axios.get(`/api2/react-starter/items`)
+		axios.get(`${process.env.REACT_APP_JSON_SERVER}/json-server/exchange-rate?searchdate=18000101`)
 			.then(response => {
-				setCount2(response.data);
+				// setCount2(response.data);
+				setCount2(jsonServer);
+
+				
 			})
-		axios.get(`${process.env.PUBLIC_URL}/json-server/db.json`)
-			.then(response => {
-				console.log(process.env, response);
+			.catch(() =>{
+				setCount2(jsonServer);
+
 			})
+		// axios.get(`${process.env.PUBLIC_URL}/json-server/db.json`)
+		// 	.then(response => {
+		// 		console.log(process.env, response);
+		// 	})
 	}, []);
 	return( 
 		<React.Fragment>
@@ -27,12 +35,13 @@ export default function JsonServerTest(){
 			<div>
 				<div  className='left' style={{width: '40%'}} >
 					<pre>
+						https://www.koreaexim.go.kr<br/>
 						{JSON.stringify(count,null, 2)}
 					</pre>
 				</div>
 				<div  className='left' style={{width: '40%'}} >
 					<pre>
-						{process.env.REACT_APP_JSON_SERVER}
+						{process.env.REACT_APP_JSON_SERVER}<br/>
 						{JSON.stringify(count2,null, 2)}
 					</pre>
 				</div>

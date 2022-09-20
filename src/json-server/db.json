@@ -1,0 +1,9 @@
+{
+  "exchange-rate": { 
+    "description" : "한국수출입은행 오픈api 데이터set 출처:https://www.koreaexim.go.kr/ir/HPHKIR020M01?apino=2&viewtype=C&searchselect=&searchword=#none",
+    "18000101":{ "data": []}
+    
+  }
+
+}
+  
