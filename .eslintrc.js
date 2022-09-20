@@ -19,6 +19,17 @@ module.exports = {
 		
 		//선언은 되었지만 해당 값이 읽히지는 않음
 		// "no-unused-vars": false, 
+
+		"import/no-anonymous-default-export": ["error", {
+			// "allowArray": false,
+			// "allowArrowFunction": false,
+			// "allowAnonymousClass": false,
+			// "allowAnonymousFunction": false,
+			// "allowCallExpression": true, // The true value here is for backward compatibility
+			// "allowLiteral": false,
+			// "allowObject": false
+		  }]
+
 	},
 
 };
