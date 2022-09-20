@@ -13,7 +13,7 @@ export default function JsonServerTest(){
 			.then(response => {
 				setCount(response.data);
 			})
-		axios.get(`${process.env.REACT_APP_JSON_SERVER}/json-server/exchange-rate?searchdate=18000101`)
+		axios.get(`${process.env.REACT_APP_JSON_SERVER}/json-server/exchange-rate/?searchdate=18000101`)
 			.then(response => {
 				// setCount2(response.data);
 				setCount2(jsonServer);
@@ -21,7 +21,7 @@ export default function JsonServerTest(){
 				
 			})
 			.catch(() =>{
-				setCount2(jsonServer);
+				setCount2(jsonServer['exchange-rate'][18000101]);
 
 			})
 		// axios.get(`${process.env.PUBLIC_URL}/json-server/db.json`)
